@@ -7,9 +7,7 @@ const AllMeetups = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(
-      `https://max-react-refresher-default-rtdb.europe-west1.firebasedatabase.app/meetups.json`
-    )
+    fetch(`https://new-react-meetup-default-rtdb.firebaseio.com/meetups.json`)
       .then((res) => res.json())
       .then((data) => {
         const meetups = [];

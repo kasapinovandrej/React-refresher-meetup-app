@@ -6,7 +6,7 @@ const NewMeetup = () => {
   const history = useHistory();
   const addMeetupHandler = (meetupData) => {
     fetch(
-      `https://max-react-refresher-default-rtdb.europe-west1.firebasedatabase.app/meetups.json`,
+      `https://new-react-meetup-default-rtdb.firebaseio.com/meetups.json`,
       {
         method: "POST",
         body: JSON.stringify(meetupData),
